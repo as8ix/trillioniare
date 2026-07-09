@@ -260,8 +260,13 @@ export default function Game() {
             <TeamsPanel teams={teams} currentTeamIndex={currentTeamIndex} />
           )}
 
-          <div className="flex-1 flex flex-col lg:flex-row items-center justify-center w-full gap-8 mt-4">
+          <div className="flex-1 flex flex-col lg:flex-row items-center justify-center w-full gap-4 md:gap-8 mt-2 md:mt-4">
             <div className="flex-1 flex flex-col justify-center w-full">
+              {/* Mobile Score Indicator (Hidden on Desktop) */}
+              <div className="lg:hidden w-full max-w-4xl mx-auto mb-4 flex justify-between items-center bg-baseera-primary-dark/80 backdrop-blur-md px-6 py-3 rounded-full border-2 border-baseera-accent/30 shadow-lg">
+                <span className="text-white font-bold">المستوى: <span className="text-baseera-accent">{currentQIndexForPyramid + 1}</span></span>
+                <span className="text-white font-bold">الجائزة: <span className="text-baseera-accent">{getPrizeAmount(currentQIndexForPyramid + 1).toLocaleString()}</span></span>
+              </div>
               {gameMode === "group" && (
                 <div className="mb-4 text-center w-full max-w-4xl mx-auto">
                   <span className="inline-block px-6 py-2 rounded-full bg-baseera-accent text-baseera-primary font-black text-xl shadow-lg border-2 border-white/20 animate-bounce">

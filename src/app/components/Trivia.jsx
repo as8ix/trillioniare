@@ -31,7 +31,7 @@ const Timer = ({ duration, onTimeout, isPaused }) => {
     <motion.div 
       animate={timeLeft <= 5 ? { scale: [1, 1.1, 1], color: ["#ef4444", "#ffffff", "#ef4444"] } : {}}
       transition={{ repeat: Infinity, duration: 1 }}
-      className={`text-7xl font-black my-8 drop-shadow-md ${timeLeft <= 5 ? 'text-red-500' : 'text-baseera-accent'}`} 
+      className={`text-5xl md:text-7xl font-black my-4 md:my-8 drop-shadow-md ${timeLeft <= 5 ? 'text-red-500' : 'text-baseera-accent'}`} 
       dir="ltr"
     >
       00:{timeLeft.toString().padStart(2, '0')}
