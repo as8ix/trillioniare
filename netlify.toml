@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# إعدادات خاصة لـ Next.js لضمان عمل الصفحات والموجهات (Routing) بشكل صحيح
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
