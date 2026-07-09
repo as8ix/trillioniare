@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# من سيربح الترليون؟ 🏆💎
 
-## Getting Started
+لعبة تفاعلية تنافسية مستوحاة من فكرة البرنامج الشهير "من سيربح المليون"، صُممت خصيصاً للتجمعات العائلية والأصدقاء، مع تركيز خاص على المعلومات العامة الدقيقة والأسئلة الإسلامية والتاريخية العميقة.
 
-First, run the development server:
+## 🌟 الميزات الأساسية
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **وضعان للعب:** 
+  * 🧍 **اللعب الفردي:** تحدٍ كلاسيكي للوصول إلى الترليون.
+  * 👥 **لعب المجموعات (الأسر):** وضع تنافسي يسمح بمشاركة عدة فرق، مع نظام أدوار وإقصاء للمخطئين.
+* **التحديات البينية (Intermissions):** في وضع المجموعات، يظهر تحدٍ حركي أو ذهني ممتع كل 5 جولات بين الفرق، والفائز يحصل على "حصانة ضد الإقصاء" أو "استرجاع وسيلة مساعدة".
+* **وسائل المساعدة:**
+  * 📞 اتصال بصديق
+  * ⚖️ حذف إجابتين (50:50)
+  * 👳‍♂️ استشارة المشايخ (بديل الاستعانة بالجمهور)
+* **تدرج ذكي للصعوبة:** 15 مستوى تبدأ بأسئلة عامة بسيطة وتنتهي بأسئلة "تعجيزية" في تفاصيل السيرة والتاريخ الإسلامي لا يحلها إلا المتبحر!
+* **الوضع الليلي والمضيء (Dark/Light Mode):** تصميم أنيق يدعم التبديل السلس بين الوضع الليلي والنهاري لإراحة العين وإضافة طابع احترافي.
+* **مؤثرات بصرية وصوتية:** استخدام حركات انسيابية (Animations) وتصميم واجهة مستخدم (UI) فخم بالألوان الملكية (الكحلي والذهبي).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ التقنيات المستخدمة
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+تم بناء هذا المشروع باستخدام أحدث تقنيات تطوير الويب:
+* **[Next.js](https://nextjs.org/)** (React Framework)
+* **[Tailwind CSS](https://tailwindcss.com/)** (للتصميم والتنسيق المباشر)
+* **[Framer Motion](https://www.framer.com/motion/)** (للحركات والانتقالات السلسة)
+* **[Lucide React](https://lucide.dev/)** (للأيقونات)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 طريقة التشغيل (كيف تلعب؟)
 
-## Learn More
+إذا كنت ترغب بتشغيل اللعبة على جهازك المحلي، اتبع الخطوات التالية:
 
-To learn more about Next.js, take a look at the following resources:
+1. قم بتحميل المشروع أو استنساخه (Clone):
+   ```bash
+   git clone https://github.com/as8ix/trillioniare.git
+   ```
+2. ادخل إلى مجلد المشروع:
+   ```bash
+   cd trillioniare
+   ```
+3. قم بتثبيت الحزم (Dependencies):
+   ```bash
+   npm install
+   ```
+4. قم بتشغيل الخادم المحلي:
+   ```bash
+   npm run dev
+   ```
+5. افتح المتصفح على الرابط `http://localhost:3000` واستمتع باللعبة!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 هيكل ملفات الأسئلة
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+يتم تغذية اللعبة بالأسئلة والتحديات من خلال ملفات JSON قابلة للتعديل بسهولة، وتقع في المسار `src/app/data/`:
+* `questions.json`: يحتوي على 60 سؤالاً مقسمة على 15 مستوى (4 نماذج لكل مستوى لضمان التنوع).
+* `intermissions.json`: يحتوي على التحديات الحركية والذهنية البينية.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+**صُنع بحب للتجمعات العائلية المميزة!** ❤️
